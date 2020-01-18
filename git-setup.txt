@@ -1,1 +1,2 @@
 This is an example of setting up git and resolving merge conflict.
+Change this to create merge conflict.
