@@ -1,1 +1,1 @@
-This is to learn branching. 
+This is to learn branching. Merge with no fast forward.
