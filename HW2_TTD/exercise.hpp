@@ -20,7 +20,10 @@ std::vector<std::string> fizzBuzz(int size, bool fizz, bool buzz) {
 			}
 		}
 	}
-	
+	if (fizz and !buzz) {
+		generator[2] = "fizz";
+		
+	}
 
 	return generator;
 }
