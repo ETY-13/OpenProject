@@ -14,18 +14,19 @@ using std::string;
 using std::to_string;
 
 
-TEST_CASE("Return a vector") {
+TEST_CASE("Return a vector generator") {
+
 	INFO("Function must return a empty vector");
-	REQUIRE(fizzBuzz(0) == vector<string>{});
+	REQUIRE(fizzBuzz(0,false,false) == vector<string>{});
 
 	INFO("Function must return a vector with the string '1'");
-	REQUIRE(fizzBuzz(1) == vector<string>{"1"});
+	REQUIRE(fizzBuzz(1,false, false) == vector<string>{"1"});
 
 	INFO("Function must return a vector with string '1,''2,''3,''4,'5' ");
-	REQUIRE(fizzBuzz(5) == vector<string>{"1,", "2,", "3,", "4,", "5"});
+	REQUIRE(fizzBuzz(5,false,false) == vector<string>{"1,", "2,", "3,", "4,", "5"});
 
 	INFO("Function must return a vector of 50 string number: '1,',...'50' ");
-	REQUIRE(fizzBuzz(50) == vector<string>{ "1,", "2,", "3,", "4,", "5,", "6,",
+	REQUIRE(fizzBuzz(50,false,false) == vector<string>{ "1,", "2,", "3,", "4,", "5,", "6,",
 											"7,", "8,", "9,", "10,", "11,", "12,",
 											"13,", "14,", "15,", "16,", "17,", "18,",
 											"19,", "20,", "21,", "22,", "23,","24,",
@@ -36,7 +37,7 @@ TEST_CASE("Return a vector") {
 											"49,", "50"                               });
 
 	INFO("Function must return a generated vector of 100 string number");
-	REQUIRE(fizzBuzz(100) == vector<string> { "1,", "2,", "3,", "4,", "5,", "6,", 
+	REQUIRE(fizzBuzz(100,false,false) == vector<string> { "1,", "2,", "3,", "4,", "5,", "6,", 
 											  "7,", "8,", "9,", "10,", "11,", "12,",
 											  "13,", "14,", "15,", "16,", "17,", "18,", 
 											  "19,", "20,", "21,", "22,", "23,","24,", 
@@ -53,4 +54,10 @@ TEST_CASE("Return a vector") {
 											  "85,", "86,", "87,", "88,", "89,","90,", 
 											  "91,", "92,", "93,", "94,", "95,", "96,", 
 											  "97,", "98,", "99,", "100"               });
+}
+
+TEST_CASE("Change every integer divisible by 3 to Fizz") {
+
+	INFO("'3' should be changed to fizz");
+	REQUIRE(fizzBuzz(3,true,false) == vector<string>{"1,", "2,", "fizz"});
 }

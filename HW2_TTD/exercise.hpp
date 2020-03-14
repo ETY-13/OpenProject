@@ -5,7 +5,7 @@
 #include<vector>
 #include<string>
 
-std::vector<std::string> fizzBuzz(int size) {
+std::vector<std::string> fizzBuzz(int size, bool fizz, bool buzz) {
 	std::vector<std::string>generator(size);
 	if (size > 0) {
 		generator[0] = "1";
@@ -20,5 +20,7 @@ std::vector<std::string> fizzBuzz(int size) {
 			}
 		}
 	}
+	
+
 	return generator;
 }
