@@ -14,5 +14,7 @@ using std::string;
 
 TEST_CASE("Return a vector") {
 	INFO("Function must return a empty vector");
-	REQUIRE(fizzBuzz() == vector<string>{});
+	REQUIRE(fizzBuzz(0) == vector<string>{});
+
+
 }
