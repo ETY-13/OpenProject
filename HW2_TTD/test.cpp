@@ -109,4 +109,11 @@ TEST_CASE("Change every integer divisible by 5 to buzz") {
 		REQUIRE(fizzBuzz(5, false, true) == vector<string>{ "1,", "2,", "3,", "4,", "buzz" });
 	}
 
+	{
+		INFO("'5','10,'15','20'should be buzz");
+		REQUIRE(fizzBuzz(20, false, true) == vector<string>{"1,", "2,", "3,", "4,", "buzz,","6",
+															"7,","8,","9,","buzz,","11,","12,","13,",
+															"14,","buzz,","16,","17,","18,","19,","buzz"});
+	}
+
 }
