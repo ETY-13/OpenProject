@@ -16,5 +16,8 @@ TEST_CASE("Return a vector") {
 	INFO("Function must return a empty vector");
 	REQUIRE(fizzBuzz(0) == vector<string>{});
 
+	INFO("Function must return a vector with the string '1'");
+	REQUIRE(fizzBuzz(1) == vector<string>{"1"});
+
 
 }
