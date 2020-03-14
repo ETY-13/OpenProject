@@ -13,6 +13,7 @@ using std::vector;
 using std::string;
 using std::to_string;
 
+
 TEST_CASE("Return a vector") {
 	INFO("Function must return a empty vector");
 	REQUIRE(fizzBuzz(0) == vector<string>{});
