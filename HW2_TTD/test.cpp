@@ -20,7 +20,7 @@ TEST_CASE("Return a vector") {
 	REQUIRE(fizzBuzz(1) == vector<string>{"1"});
 
 	INFO("Function must return a vector with string '1,''2,''3,''4,'5' ");
-	REQUIRE(fizzBuzz(5) == vector<string>{"1,", "2,", "3,", "4,", "5,"});
+	REQUIRE(fizzBuzz(5) == vector<string>{"1,", "2,", "3,", "4,", "5"});
 
 
 }
