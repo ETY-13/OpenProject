@@ -20,8 +20,17 @@ std::vector<std::string> fizzBuzz(int size, bool fizz, bool buzz) {
 			}
 		}
 	}
-	if (fizz and !buzz) {
-		generator[2] = "fizz";
+	if (fizz) {
+		for (auto step = 0; step < size; ++step) {
+			if ((step+1)% 3 == 0) {
+				if (step+1 == size ) {
+					generator[step] = "fizz";
+				}
+				else {
+					generator[step] = "fizz,";
+				}
+			}
+		}
 		
 	}
 

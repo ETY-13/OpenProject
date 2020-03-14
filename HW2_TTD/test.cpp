@@ -62,6 +62,6 @@ TEST_CASE("Change every integer divisible by 3 to Fizz") {
 	REQUIRE(fizzBuzz(3,true,false) == vector<string>{"1,", "2,", "fizz"});
 
 	INFO("'3', '6', '9', and '12' should be 'fizz'");
-	REQUIRE(fizzBuzz(15, true, false) == vector<string>{"1,", "2,", "fizz,", "4,", "5,", "fizz,",
-														"7,", "8,", "fizz,", "10", "11", "fizz"});
+	REQUIRE(fizzBuzz(12, true, false) == vector<string>{"1,", "2,", "fizz,", "4,", "5,", "fizz,",
+														"7,", "8,", "fizz,", "10,", "11,", "fizz"});
 }
