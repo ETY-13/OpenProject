@@ -101,3 +101,12 @@ TEST_CASE("Change every integer divisible by 3 to Fizz") {
 															  "97,", "98,", "fizz,", "100"                 });
 	}
 }
+
+TEST_CASE("Change every integer divisible by 5 to buzz") {
+
+	{
+		INFO("'5' should be buzz");
+		REQUIRE(fizzBuzz(5, false, true) == vector<string>{ "1,", "2,", "3,", "4,", "buzz" });
+	}
+
+}
