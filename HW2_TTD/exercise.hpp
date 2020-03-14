@@ -48,5 +48,9 @@ std::vector<std::string> fizzBuzz(int size, bool fizz, bool buzz) {
 		}
 	}
 
+	if (fizz and buzz) {
+		generator[14] = "fizzBuzz";
+	}
+
 	return generator;
 }

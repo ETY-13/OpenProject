@@ -143,9 +143,9 @@ TEST_CASE("Test for fizzBuzz: divisible by 3 is fizz, divisible by 5 is buzz, an
 
 	{
 		INFO("3 is fizz, 5 is buzz, 15 is fizzBuzz");
-		REQUIRE(fizzBuzz(15,true,true) == vector<string>{ "1,", "2,", "fizz,", "4,", "buzz,", "fizz,", "7,", "8", "fizz,"
-											              "buzz,", "11,", "fizz", "13,", "14,", "fizzBuzz"               });
-
+		REQUIRE(fizzBuzz(15,true,true) == vector<string>{ "1,", "2,", "fizz,", "4,", "buzz,", "fizz,", "7,", "8,", "fizz,",
+											              "buzz,", "11,", "fizz,", "13,", "14,", "fizzBuzz"               });
 	}
 
+	
 }
