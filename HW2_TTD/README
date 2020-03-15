@@ -22,7 +22,7 @@ Section 3:
 
 Section 4:
       Test, whether all number divisible by 3 is buzz and all number divisible by 5 
-      is fizz, and all number divisble by both is fizzBuzz. 
+      is fizz, and all number divisible by both is fizzBuzz. 
 
 My code only tests whether the vector has the right items and it does not
 print out the item as shown by Michael Whelan. 
