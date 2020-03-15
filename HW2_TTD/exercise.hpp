@@ -49,7 +49,16 @@ std::vector<std::string> fizzBuzz(int size, bool fizz, bool buzz) {
 	}
 
 	if (fizz and buzz) {
-		generator[14] = "fizzBuzz";
+		for (auto step = 0; step < size; ++step) {
+			if ((step + 1) % 15 == 0) {
+				if (step + 1 == size) {
+					generator[step] = "fizzBuzz";
+				}
+				else {
+					generator[step] = "fizzBuzz,";
+				}
+			}
+		}
 	}
 
 	return generator;
