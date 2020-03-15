@@ -1,6 +1,6 @@
 // exercise.hpp
 // Theng Yang
-// contain the FizzBuzzWhiz TDD exercise
+// contain the FizzBuzz() function for TDD exercise
 
 #include<vector>
 #include<string>
