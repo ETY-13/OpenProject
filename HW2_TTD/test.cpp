@@ -139,7 +139,7 @@ TEST_CASE("Change every integer divisible by 5 to buzz") {
 
 }
 
-TEST_CASE("Test for fizzBuzz: divisible by 3 is fizz, divisible by 5 is buzz, and disible by both is fizzBuzz") {
+TEST_CASE("Test for fizzBuzz: divisible by 3 is fizz, divisible by 5 is buzz, and divisible by both is fizzBuzz") {
 
 	{
 		INFO("3 is fizz, 5 is buzz, 15 is fizzBuzz");
@@ -148,7 +148,7 @@ TEST_CASE("Test for fizzBuzz: divisible by 3 is fizz, divisible by 5 is buzz, an
 	}
 
 	{
-		INFO("All divisble by 3 is fizz, all divisible by 5 is buzz, all divisible by both is fizzBuzz");
+		INFO("All divisible by 3 is fizz, all divisible by 5 is buzz, all divisible by both is fizzBuzz");
 		REQUIRE(fizzBuzz(100, true, true) == vector<string> { "1,", "2,", "fizz,", "4,", "buzz,", "fizz,", "7,", 
 															  "8,", "fizz,", "buzz,","11,", "fizz,", "13,","14,", 
 															  "fizzBuzz,", "16,", "17,", "fizz,", "19,","buzz,", 

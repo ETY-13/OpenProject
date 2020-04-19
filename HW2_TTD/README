@@ -1,0 +1,28 @@
+Theng Yang
+3/14/2020
+
+This is the readme for CS372 HW2. The purpose of the assignment is to spend at least 45 minutes 
+doing TTD practice on our own. I decided to do my TDD on the fizzBuzz problem as described by 
+Michael Whelan is his blog: https://www.michael-whelan.net/code-katas-for-practicing-tdd/. 
+
+More description on the fizzBuzz problem can be found at Michael Whelan's GitHub page:
+https://github.com/mwhelan/Katas/tree/master/Katas.FizzBuzz
+
+
+I divided my test into 4 sections.
+Section 1:    
+          Test if the generator returns the right vector with the 
+          correct items.
+
+Section 2:
+      Test whether all number divisible by 3 is changed into buzz.
+
+Section 3:
+      Test whether all number divisible by 5 is changed into fizz.
+
+Section 4:
+      Test, whether all number divisible by 3 is buzz and all number divisible by 5 
+      is fizz, and all number divisible by both is fizzBuzz. 
+
+My code only tests whether the vector has the right items and it does not
+print out the item as shown by Michael Whelan. 
