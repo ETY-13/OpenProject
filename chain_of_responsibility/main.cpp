@@ -2,7 +2,7 @@
 // Theng Yang
 // 5/2/2020
 //
-// Source file that contain a simple program to demostrate the chain of responsibility. 
+// Source file that contain a simple program to demonstrate the chain of responsibility. 
 
 #include"CargoShipping.hpp"
 #include"Shipper.hpp"
