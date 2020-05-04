@@ -1,0 +1,7 @@
+# ignore the following file
+*.sln
+*.vcxproj
+*.filters
+*.user
+*.vs
+Debug/
