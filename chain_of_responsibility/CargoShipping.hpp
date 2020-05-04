@@ -13,7 +13,7 @@
 class CargoShipping{
 public:
 	CargoShipping();
-	~CargoShipping();
+	virtual ~CargoShipping();
 	virtual void setShipper(CargoShipping *ship) ;
 	virtual void addShipper(CargoShipping *ship) ;
 	virtual void takeCargo(int cargoWeight) const;
